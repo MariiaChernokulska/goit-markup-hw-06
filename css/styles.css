@@ -563,7 +563,7 @@ span {
     position: absolute;
     top: 50%;
     left: 12px;
-    translate: 0 -50%;
+    transform: translateY(-50%);
    
     width: 20px;
     height: 20px;
@@ -610,26 +610,35 @@ textarea::placeholder{
     justify-content: center;
     align-items: center;
 }
-.checkbox {
+
+.icon-check {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 7px;
-
+    margin-right: 9px;
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
     border-radius: 4px;
 
+
 }
-.checkbox svg {
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 11px;
     height: 8px;
+
 }
-.accept input:checked + label .checkbox {
+.accept input:checked +.icon-check {
     background-color: var(--accent-color);
     border: none;
 }
+
+
+
+
 .accept label {
     font-size: 14px;
     line-height: 1.71;
